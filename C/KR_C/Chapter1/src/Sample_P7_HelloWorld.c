@@ -1,8 +1,7 @@
 /*------------------------------------------------------------------------
 *
 * Sample_P7_HelloWorld.c: The first C program that prints the greeting
-* hello, world
-* on the screen
+* hello, world on the screen
 *
 * COMPILE:
 *   To compile on VC++ cl.exe /EHsc /W4 Sample_P7_HelloWorld.c
