@@ -1,32 +1,32 @@
 /*------------------------------------------------------------------------
  *
- * P17_Ex_1_6.c: Verify that the expression getchar() != EOF is 0 or
- * 1.
+ * P18_CharCount_ver2.c: Count characters in input
  *
  * COMPILE:
  *   To compile on VC++:
- *         cl.exe /EHsc /W4 P17_Ex_1_6.c
- *            EHsc -->standard exception handling
+ *         cl.exe /EHsc /W4 P18_CharCount_ver2.c
+ *            EHsc -->standard exception handling 
  *            W4 is for enabling warning
  *   To compile on gcc:
- *            gcc -Wall -g -o P17_Ex_1_6 P17_Ex_1_6.c
+ *            gcc -Wall -g -o P18_CharCount_ver2 P18_CharCount_ver2.c
  *            Wall for enable all Warning
  *            g for debug information
  *
  * EXECUTE:
  *   On Windows, in the command prompt window, type
- *      P17_Ex_1_6.exe
- *   On Unix, in the shell terminal window, type
- *      ./P17_Ex_1_6
+ *      P18_CharCount_ver2.exe
+ *   On Unix, in the shell terminal window, type 
+ *      ./P18_CharCount_ver2
  *
  *-------------------------------------------------------------------------*/
 #include <stdio.h>
 
 int main() {
-	int ch;
-	while (ch = (getchar() != EOF))
-		printf("%d", ch);
-	printf("\nEOF value is %d", ch);
+	double nc;
+
+	for (nc = 0; getchar() != EOF; ++nc)
+		;
+	printf("Char count: %.0f\n", nc);
 
 	return 0;
 }
